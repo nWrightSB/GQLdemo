@@ -12,4 +12,28 @@ Smartbear demo GraphQL server
 - `node ./src/index.js`
 
 # usage
-IDE: [ip]/graphiql
+ - IDE: [ip]/graphiql
+- Once server is running, currently there are two actions it performs, create and read
+- Get all links:
+`
+{
+  allLinks {
+    id
+    url
+    description
+  }
+}
+`
+- Add new link:
+`
+mutation {
+  createLink(
+    url: "[url value]",
+    description: "[description string]",
+  ) {
+    id
+    url
+    description
+  }
+}
+`
