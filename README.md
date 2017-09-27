@@ -6,7 +6,7 @@ Smartbear demo GraphQL server
 
 # install
 - clone repo
-- ensure NPM is installed and up to date
+- ensure NPM is installed and up to date, as well as MongoDB running
 - cd into repo
 - `npm install`
 - `node ./src/index.js`
