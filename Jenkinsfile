@@ -3,16 +3,7 @@ pipeline {
   stages {
     stage('Log in JIRA') {
       steps {
-        parallel(
-          "Log in JIRA": {
-            jiraComment(issueKey: 'SOAPUIOS-257', body: 'Updated value')
-            
-          },
-          "Log in Jenkins": {
-            echo 'RUNNING!'
-            
-          }
-        )
+        echo 'RUNNING!'
       }
     }
     stage('Shell Log') {
