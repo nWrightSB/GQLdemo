@@ -4,6 +4,8 @@ Smartbear demo GraphQL server
 
 * Server returns link info that has been submitted by users, documentation is accessible in the IDE - uses simple MongoDB to store links. No AUTH layer implemented.
 
+* Attempting to run through Jenkins
+
 # install
 - clone repo
 - ensure NPM is installed and up to date, as well as MongoDB running
