@@ -6,7 +6,7 @@ pipeline {
         git(poll: true, url: 'https://github.com/nWrightSB/GQLdemo', branch: 'master')
       }
     }
-    stage('Pull changes') {
+    stage('Verify changes pulled') {
       steps {
         sh '''cd ~/Code/GQLdemo
 
