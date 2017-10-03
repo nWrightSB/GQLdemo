@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Smartbear demo GraphQL server",
   "main": "index.js",
-  "scripts": 
+  "scripts": {
     "test": "forever start src/index.js -p 3050",
     "start": "forever start src/index.js -p 3000"
   },
