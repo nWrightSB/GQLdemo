@@ -4,7 +4,8 @@
   "description": "Smartbear demo GraphQL server",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node src/index.js -p 3050",
+    "start": "node src/index.js -p 3000"
   },
   "repository": {
     "type": "git",
