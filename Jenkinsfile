@@ -1,14 +1,38 @@
 pipeline {
   agent any
   stages {
-    stage('Log in JIRA') {
+    stage('Poll Github') {
       steps {
-        echo 'RUNNING!'
+        git(poll: true, url: 'https://github.com/nWrightSB/GQLdemo', branch: 'master')
       }
     }
-    stage('Shell Log') {
+    stage('Pull changes') {
       steps {
-        sh 'echo "hello world"'
+        git(url: 'https://github.com/nWrightSB/GQLdemo', branch: 'master')
+      }
+    }
+    stage('Shutdown server') {
+      steps {
+        sh '''cd ~/Code/GQLdemo
+
+killall -KILL node'''
+      }
+    }
+    stage('Build') {
+      steps {
+        sh '''cd ~/Code/GQLdemo
+
+npm start'''
+      }
+    }
+    stage('Test') {
+      steps {
+        sh 'echo "TESTING"'
+      }
+    }
+    stage('Log new version deployed') {
+      steps {
+        sh 'echo "NEW VERSION OK"'
       }
     }
   }
