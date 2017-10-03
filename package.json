@@ -4,8 +4,8 @@
   "description": "Smartbear demo GraphQL server",
   "main": "index.js",
   "scripts": {
-    "test": "node src/index.js -p 3050",
-    "start": "node src/index.js -p 3000"
+    "test": "forever start src/index.js -p 3050",
+    "start": "forever start src/index.js -p 3000"
   },
   "repository": {
     "type": "git",
