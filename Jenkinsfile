@@ -18,7 +18,7 @@ pipeline {
 killall -KILL node'''
       }
     }
-    stage('Build') {
+    stage('Start server') {
       steps {
         sh '''cd ~/Code/GQLdemo
 
