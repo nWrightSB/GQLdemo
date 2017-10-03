@@ -8,7 +8,9 @@ pipeline {
     }
     stage('Pull changes') {
       steps {
-        git(url: 'https://github.com/nWrightSB/GQLdemo', branch: 'master')
+        sh '''cd ~/Code/GQLdemo
+
+git pull'''
       }
     }
     stage('Shutdown server') {
