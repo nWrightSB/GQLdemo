@@ -1,0 +1,30 @@
+Hackernews GraphQL server running on port 3000.
+Hackernews GraphQL server running on port 3000.
+module.js:473
+      throw err;
+      ^
+
+Error: Cannot find module '/src/index.js'
+    at Function.Module._resolveFilename (module.js:527:15)
+    at Function.Module._load (module.js:453:25)
+    at Function.Module.runMain (module.js:665:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:607:3
+module.js:473
+      throw err;
+      ^
+
+Error: Cannot find module '/src/index.js'
+    at Function.Module._resolveFilename (module.js:527:15)
+    at Function.Module._load (module.js:453:25)
+    at Function.Module.runMain (module.js:665:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:607:3
+Hackernews GraphQL server running on port 3000.
+Error: Must provide document
+    at invariant (/Users/SmartbearSE/Code/GQLdemo/node_modules/graphql/jsutils/invariant.js:18:11)
+    at Object.validate (/Users/SmartbearSE/Code/GQLdemo/node_modules/graphql/validation/validate.js:58:34)
+    at doRunQuery (/Users/SmartbearSE/Code/GQLdemo/node_modules/apollo-server-core/dist/runQuery.js:80:38)
+    at /Users/SmartbearSE/Code/GQLdemo/node_modules/apollo-server-core/dist/runQuery.js:20:54
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
