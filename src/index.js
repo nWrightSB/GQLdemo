@@ -17,7 +17,7 @@ const start = async () => {
     endpointURL: '/graphql',
   }));
 
-  const PORT = 3000;
+  const PORT = process.argv[3];
   app.listen(PORT, () => {
     console.log(`Hackernews GraphQL server running on port ${PORT}.`)
   });
