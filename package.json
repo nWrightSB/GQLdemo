@@ -20,6 +20,7 @@
   "homepage": "https://github.com/nWrightSB/GQLdemo#readme",
   "dependencies": {
     "apollo-server-express": "^1.1.2",
+    "crest": "https://github.com/ledsun/crest.git",
     "body-parser": "^1.18.2",
     "express": "^4.15.5",
     "graphql": "^0.11.4",
